@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcul de la moyenne</title>
+</head>
+<body>
+    <script>
+        var notes = [15, 12, 18, 14, 16, 16, 19, 13, 11, 10, 16, 15];
+        somme = 0;
+        for (i = 0; i < notes.length; i++) {
+            somme = somme + notes[i];
+        }
+        moyenne = somme / notes.length;
+        moyenne = moyenne.toFixed(2);
+        document.write("La moyenne vaut " + moyenne);
+    </script>
+    
+</body>
+</html>
