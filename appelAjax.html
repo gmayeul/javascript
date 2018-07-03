@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Appel d'API</title>
+</head>
+
+<body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = afterResultLoad;
+        xhttp.open("GET", "http://loisirs-web-backend.cleverapps.io/db", true)
+        xhttp.send();
+
+        function afterResultLoad() {
+            var json = JSON.parse(xhttp.responseText);
+            console.log(json);
+        }
+
+        function listerUtilisateurs() {
+
+        }
+
+    </script>
+    <nav>
+        <button type="button" onclick="listerUtilisateurs()">Lister les utilisateurs</button>
+        <button type="button" onclick="listerHobbies()">Lister les hobbies</button>
+    </nav>
+    <section>
+        <div id="demo"></div>
+    </section>
+
+</body>
+
+</html>
