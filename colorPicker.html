@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choisissez une couleur</title>
+</head>
+
+<body>
+    <button type="button" onclick="changerCouleur('r')">Rouge</button>
+    <button type="button" onclick="changerCouleur('g')">Vert</button>
+    <button type="button" onclick="changerCouleur('b')">Bleu</button>
+    <div id="carre" style="height:150px;width:150px;background-color:black"></div>
+    <script>
+        function changerCouleur(c) {
+            switch (c) {
+                case 'r':
+                document.getElementById("carre").style.backgroundColor="red";
+                break;
+                case 'g':
+                document.getElementById("carre").style.backgroundColor="green";
+                break;
+                case 'b':
+                document.getElementById("carre").style.backgroundColor="blue";
+                break;
+                default:
+                break;
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
